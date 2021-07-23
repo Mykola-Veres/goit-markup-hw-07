@@ -1,20 +1,12 @@
 .team {
   background-color: var(--button-secondary-made);
 }
-.team__title {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-.team__flex {
+.team__list {
   display: flex;
 }
-.team__card {
+.team__box {
+  padding-left: 32px;
+  padding-right: 30px;
   padding-top: var(--margin-content);
   padding-bottom: var(--margin-content);
   border-radius: 0px 0px 4px 4px;
@@ -42,11 +34,9 @@
 }
 .social-list {
   @include centeredFlex ($content:space-between);
-  margin-left: 32px;
-  margin-right: 30px;
   margin-top: 16px;
 }
-.social-list__item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: var(--margin-content);
 }
 .social-list__link {

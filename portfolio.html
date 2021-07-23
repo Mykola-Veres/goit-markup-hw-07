@@ -18,35 +18,37 @@
   </head>
   <body>
     <!-- Шапка страницы -->
-    <header class="header conteiner header__border">
-      <nav class="nav">
-        <a class="logo link" href="index.html">Web<span class="header__logo">Studio</span></a>
-        <ul class="nav__list list">
-          <li class="nav__item"><a class="nav__link link" href="index.html">Студия</a></li>
-          <li class="nav__item header__current">
-            <a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
+    <header class="header  header__border">
+      <div class="conteiner header__conteiner">
+        <nav class="nav">
+          <a class="logo link" href="index.html">Web<span class="header__logo">Studio</span></a>
+          <ul class="nav__list list">
+            <li class="nav__item"><a class="nav__link link" href="index.html">Студия</a></li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts-list__icon--envelope" width="16" height="12">
+                <use href="./images/icon.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+          <li class="contacts-list__item">
+            <a class="contacts-list__link link" href="tel:+380961111111">
+              <svg class="contacts-list__icon--tell" width="10" height="16">
+                <use href="./images/icon.svg#icon-tell"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header__contacts list">
-        <li class="header__item">
-          <a class="header__link link" href="mailto:info@devstudio.com">
-            <svg class="header__envelope" width="16" height="12">
-              <use href="./images/icon.svg#icon-envelope-hover"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__link link" href="tel:+380961111111">
-            <svg class="header__tell" width="10" height="16">
-              <use href="./images/icon.svg#icon-tell"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- Основной контент  -->
     <main>

@@ -58,6 +58,17 @@ body {
   padding-bottom: 94px;
 }
 
+.title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
 .logo {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -356,12 +367,15 @@ body {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
 }
 
 .header__border {
   border-bottom: 1px solid #ececec;
+}
+
+.header__conteiner {
+  display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -378,10 +392,6 @@ body {
   margin-right: 50px;
 }
 
-.header__current {
-  position: relative;
-}
-
 .nav__link {
   color: var(--title-text-color);
   display: block;
@@ -396,6 +406,7 @@ body {
 
 .nav__link--current {
   color: var(--accent-color);
+  position: relative;
 }
 
 .nav__link--current::after {
@@ -410,12 +421,12 @@ body {
   bottom: 0;
 }
 
-.header__contacts {
+.contacts-list {
   display: flex;
   margin-left: auto;
 }
 
-.header__link {
+.contacts-list__link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -424,29 +435,29 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__link:hover, .header__link:focus {
+.contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.header__item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
   margin-right: 50px;
   display: flex;
 }
 
-.header__envelope {
+.contacts-list__icon--envelope {
   margin-right: 10px;
   margin: auto 10px auto auto;
   color: var(--primary-text-color);
 }
 
-.header__tell {
+.contacts-list__icon--tell {
   margin-right: 10px;
   color: var(--primary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__tell:hover, .header__tell:focus {
+.contacts-list__icon--tell:hover, .contacts-list__icon--tell:focus {
   fill: var(--accent-color);
 }
 
@@ -478,11 +489,11 @@ body {
   color: var(--secondary-color-white);
 }
 
-.section__features {
+.features {
   padding-top: 94px;
 }
 
-.features {
+.features__list {
   display: flex;
 }
 
@@ -507,7 +518,7 @@ body {
   margin-right: var(--margin-content);
 }
 
-.features__icon {
+.features__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -518,18 +529,7 @@ body {
   margin-bottom: 30px;
 }
 
-.made__title {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
-.made__flex {
+.made__list {
   display: flex;
 }
 
@@ -541,7 +541,7 @@ body {
   position: relative;
 }
 
-.made__position {
+.made__box {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -569,22 +569,13 @@ body {
   background-color: var(--button-secondary-made);
 }
 
-.team__title {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
-.team__flex {
+.team__list {
   display: flex;
 }
 
-.team__card {
+.team__box {
+  padding-left: 32px;
+  padding-right: 30px;
   padding-top: var(--margin-content);
   padding-bottom: var(--margin-content);
   border-radius: 0px 0px 4px 4px;
@@ -616,12 +607,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 32px;
-  margin-right: 30px;
   margin-top: 16px;
 }
 
-.social-list__item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: var(--margin-content);
 }
 
@@ -647,22 +636,11 @@ body {
   height: 20px;
 }
 
-.customer__title {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.31;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
-.customer__flex {
+.customer__list {
   display: flex;
 }
 
-.customer__icon {
+.customer__link {
   display: flex;
   fill: #afb1b8;
   width: 170px;
@@ -674,7 +652,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customer__icon:focus, .customer__icon:hover {
+.customer__link:focus, .customer__link:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -683,7 +661,7 @@ body {
   margin-right: var(--margin-content);
 }
 
-.customer__logo {
+.customer__icon {
   width: 106px;
   height: 60px;
 }
